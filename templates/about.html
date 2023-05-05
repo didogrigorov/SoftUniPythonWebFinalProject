@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div class="full-with address hidden">
+      <div class="flex items-center px-3 justify-between gap-5 mx-auto max-w-[1320px] py-[10px] md:mx-8">
+        <p class="text-base hidden font-bold md:block">66 avenue des Champs, 75008, Paris, France</p>
+        <div class="flex items-center gap-5 contact ml-auto gap-[10px] md:gap-5 md:flex-row"> <span>(+01) - 456 789</span>
+          <div class="border border-dashed border-white self-stretch"></div><span>contact@agon.com</span>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper mx-auto text-gray-900 font-normal max-w-[1320px]"><a name="top"> </a>
+      <div class="absolute top-0 left-0 w-screen h-full bg-opacity-80 hidden video-iframe bg-[#0b0b0b] z-[999999]">
+        <div class="mx-auto video w-1/2">
+          <div class="flex justify-end">
+            <button class="text-white close-video text-[20px]" type="button" title="Close (Esc)">x</button>
+          </div>
+        </div>
+      </div>
+      <div class="overlay"></div>
+      <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 text-center">
+        <div class="text-center mb-[35px] md:mb-[43px]">
+          <h2 class="font-bold font-chivo mx-auto text-[35px] leading-[44px] md:text-[46px] md:leading-[52px] lg:text-heading-1 text-gray-900 mb-5 md:mb-[30px] max-w-[725px]">Our Story</h2>
+          <p class="text-quote md:text-lead-lg text-gray-600 mx-auto max-w-[976px]">
+          </p>
+        </div>
+        <h3 class="font-bold font-chivo text-[20px] leading-[26px] md:text-heading-4 text-gray-600 mx-auto mb-[40px] md:mb-[75px] md:w-[47ch]">We supply enterprises, organizations and institutes of high-tech industries with modern components. We build long-term trusting relationships with our customers and partnes for further fruitful cooperations.
+        </h3>
+
+      </div>
+      <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 lg:mt-[138px]">
+        <!-- <div class="text-center mb-[45px] lg:mb-[88px]">
+          <h2 class="font-bold font-chivo mx-auto text-[35px] leading-[44px] md:text-[46px] md:leading-[52px] lg:text-heading-1 text-gray-900 mb-5 md:mb-[30px] max-w-full">Providing solutions of every kind</h2>
+          <p class="text-quote md:text-lead-lg text-gray-600 mx-auto max-w-[743px]">In a professional context it often happens that private or corporate clients order a publication to publish news.
+          </p>
+        </div> -->
+        <div class="lg:flex lg:items-center gap-[30px]">
+          <div class="flex items-start gap-5 transition-all duration-300 mb-[33px] hover:translate-y-[-3px] border-b border-gray-200 pb-[50px] last:mb-0"><img class="h-full w-full object-cover max-w-[64px]" src="{%  static '/assets/images/icons/icon-resources.svg' %}" alt="icon">
+            <div>
+              <h3 class="font-bold font-chivo text-[20px] leading-[26px] md:text-heading-4 mb-[14px]">1. Acquisition
+              </h3>
+              <p class="text-excerpt">Aliquam a augue suscipit, luctus neque purus ipsum neque at dolor primis libero tempus, blandit</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-5 transition-all duration-300 mb-[33px] hover:translate-y-[-3px] border-b border-gray-200 pb-[50px] last:mb-0"><img class="h-full w-full object-cover max-w-[64px]" src="{%  static '/assets/images/icons/icon-cards.svg' %}" alt="icon">
+            <div>
+              <h3 class="font-bold font-chivo text-[20px] leading-[26px] md:text-heading-4 mb-[14px]">2. Activation
+              </h3>
+              <p class="text-excerpt">Aliquam a augue suscipit, luctus neque purus ipsum neque at dolor primis libero tempus, blandit</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-5 transition-all duration-300 mb-[33px] hover:translate-y-[-3px] border-b border-gray-200 pb-[50px]"><img class="h-full w-full object-cover max-w-[64px]" src="{% static '/assets/images/icons/icon-stats.svg' %}" alt="icon">
+            <div>
+              <h3 class="font-bold font-chivo text-[20px] leading-[26px] md:text-heading-4 mb-[14px]">3. Retention
+              </h3>
+              <p class="text-excerpt">Aliquam a augue suscipit, luctus neque purus ipsum neque at dolor primis libero tempus, blandit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 lg:mt-[150px]">
+        <div class="lg:grid lg:grid-cols-2 gap-[150px]"><img class="h-full w-full object-cover order-first rounded-2xl mb-[30px] lg:mb-0 lg:flex-1" src="{% static '/assets/images/thumbnail-24.png' %}" alt="Agon">
+          <div class="flex-1 order-1 lg:gap-[30px] xl:gap-[64px]"><span class="font-chivo inline-block bg-bg-6 text-green-900 py-[14px] px-[28px] rounded-[50px] text-[14px] leading-[14px] mb-[22px]"></span>
+{#            <div class="md:grid md:grid-cols-2 md:gap-y-[34px] lg:gap-x-[70px]">#}
+                {% autoescape off %}
+           {{ body.about_body }}
+          {% endautoescape %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="wrapper mx-auto text-gray-900 font-normal max-w-[1320px]">
+      <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 lg:mt-[88px]">
+        <div class="grid grid-cols-2 flex-1 text-center gap-2 gap-y-8 md:grid-cols-2 xl:gap-y-[70px] lg:grid-cols-5 mb-[44px] md:mb-[88px]">
+          <div>
+            <h1 class="font-chivo font-bold lg:text-display-3 md:text-[45px] md:leading-[52px] text-[35px] leading-[42px] mb-1 text-green-900">+12
+            </h1>
+            <p class="text-text text-gray-500 mx-auto md:w-[26ch]">years in business
+            </p>
+          </div>
+          <div>
+            <h1 class="font-chivo font-bold lg:text-display-3 md:text-[45px] md:leading-[52px] text-[35px] leading-[42px] mb-1 text-green-900">2K+
+            </h1>
+            <p class="text-text text-gray-500 mx-auto md:w-[26ch]">projects done
+            </p>
+          </div>
+          <div>
+            <h1 class="font-chivo font-bold lg:text-display-3 md:text-[45px] md:leading-[52px] text-[35px] leading-[42px] mb-1 text-green-900">28+
+            </h1>
+            <p class="text-text text-gray-500 mx-auto md:w-[26ch]">countries /offices
+            </p>
+          </div>
+          <div>
+            <h1 class="font-chivo font-bold lg:text-display-3 md:text-[45px] md:leading-[52px] text-[35px] leading-[42px] mb-1 text-green-900">86
+            </h1>
+            <p class="text-text text-gray-500 mx-auto md:w-[26ch]">Constant clients
+            </p>
+          </div>
+          <div>
+            <h1 class="font-chivo font-bold lg:text-display-3 md:text-[45px] md:leading-[52px] text-[35px] leading-[42px] mb-1 text-green-900">+12
+            </h1>
+            <p class="text-text text-gray-500 mx-auto md:w-[26ch]">years in business
+            </p>
+          </div>
+        </div>
+        <div class="w-full bg-gray-300 h-[1px]"></div>
+      </div>
+      <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 lg:mt-[128px]">
+      </div>
+      <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 lg:mt-[238px]">
+      </div>
+
+{% endblock %}
